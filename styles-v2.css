@@ -1,0 +1,361 @@
+body { 
+    display: flex;
+    flex-direction: column;
+    min-width: 100vh;
+    font-family: Arial, sans-serif; 
+    margin: 0; 
+    padding: 0; 
+    background-color: #f4f4f4; 
+}
+
+header {
+    background: url('img/foto-01.webp') no-repeat center center/cover;
+    color: #fff;
+    padding: 80px 20px;
+    text-align: center;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+}
+
+.language-switcher {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
+
+.language-switcher button {
+    background-color: #007BFF;
+    color: #fff;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 0.9em;
+}
+
+.language-switcher button:hover {
+    background-color: #0056b3;
+}
+
+header h1 {
+    margin: 0;
+    color: blue;
+    font-size: 3.7em;
+}
+
+#subtitle {
+    color: rgb(0, 0, 0);
+    font-size: 1.5em;
+    font-style: italic;
+    margin-top: 10px;
+}
+
+.cta-section {
+    background-color: #fff;
+    padding: 50px 20px;
+    text-align: center;
+    margin-bottom: 40PX;
+}
+
+.cta-section h2 {
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+
+.cta-section p {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+}
+
+.services-section {
+    margin-bottom: 40px;
+}
+
+.services-list {
+    display: flex;  /* Alineación horizontal */
+    justify-content: center;  /* Centrado horizontal */
+    gap: 20px;  /* Espacio entre las tarjetas */
+    flex-wrap: wrap;  /* Para que bajen si no hay suficiente espacio */
+}
+
+.service-item {
+    padding: 20px;
+    border-radius: 5px;
+    width: 250px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+    cursor: pointer;
+    background-color: white;
+    text-align: center;
+}
+
+.service-item:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3); /* Sombra más pronunciada en la parte baja */
+    transition: all 0.3s ease; /* Transición suave */
+}
+
+
+/* Mejorando la alineación de los títulos */
+#services-title, #service1-title, #service2-title, #service3-title {
+    text-align: center;
+    font-weight: bold;
+    color: #007BFF; /* Títulos en azul para destacar */
+}
+
+.service-detail {
+    margin-bottom: 40px;
+}
+
+.service-detail h2 {
+    color: #007BFF; /* Destacando el título de los detalles */
+    font-size: 1.8em;
+}
+
+.service-detail p {
+    font-size: 1.1em;
+    line-height: 1.5;
+    color: #555;
+}
+
+/* Mejora en la presentación del botón de WhatsApp */
+.cta-button {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    max-width: 400px;
+    margin: 20px auto;
+}
+
+/* Estilos del Formulario */
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    margin: 20px auto;
+    width: 100%;
+    max-width: 400px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+form input,
+form textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    box-sizing: border-box;
+}
+
+/* Botón Enviar */
+/* Botón Enviar */
+form button {
+    background-color: #007BFF;
+    color: white;
+    padding: 15px;  /* Ajuste uniforme */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+    width: 100%;
+    max-width: 400px;
+    box-sizing: border-box;  /* Incluye padding en el ancho total */
+    transition: transform 0.2s ease;
+}
+
+form button:hover {
+    background-color: #0056b3;
+    transform: scale(1.05);
+}
+
+/* Botón WhatsApp */
+.cta-button {
+    display: flex;  /* Flex para alinear icono y texto */
+    align-items: center;
+    justify-content: center;
+    background-color: #25D366;
+    color: #fff;
+    padding: 15px;  /* Igual al botón Enviar */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+    width: 100%;
+    max-width: 400px;
+    box-sizing: border-box;  /* Asegura que el padding no afecte el ancho total */
+    transition: background-color 0.3s ease;
+    text-decoration: none;  /* Quita cualquier subrayado */
+}
+
+.cta-button:hover {
+    background-color: #1ebe5d;
+}
+
+.cta-button img {
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+}
+
+.details-section {
+    display: flex; 
+    flex: 1;
+    margin-bottom: 20px;
+    justify-content: center;  /* Centrado horizontal */
+    align-items: center;  /* Centrado vertical */
+    height: auto;  /* Ocupa toda la altura de la pantalla */
+    padding: 20px; 
+    background-color: #f4f4f4;
+}
+
+.details-content {
+    background-color: white; 
+    margin-bottom: -200px;
+    padding: 30px; 
+    border-radius: 10px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+    width: 845px; 
+    text-align: center;  /* Centra el texto */
+    margin: 0 auto;  /* Centrado horizontal */
+}
+
+.details-content h2 {
+    color: #007BFF; 
+    margin-top: 30px;
+    margin-bottom: 15px;
+    font-size: 1.8em;
+    text-decoration: underline;
+}
+
+.details-content h2:hover {
+    transform: scale(1.02);  /* Pequeño zoom */
+    transition: transform 0.3s ease;
+}
+
+.details-content h3 {
+    color: #333; 
+    margin-top: 20px;
+    font-size: 1.8em;
+}
+
+.details-content p {
+    color: #555; 
+    line-height: 1.8; 
+    font-size: 1.2em;
+    margin-bottom: 15px;
+}
+
+.details-content strong {
+    color: #0056b3;
+    font-weight: bold;
+    font-size: 1.2em;
+    text-decoration: underline;  /* Ligeramente más grande para destacar */
+}
+
+.details-content strong:hover {
+    text-decoration-thickness: 2px;  /* Hace el subrayado un poco más grueso */
+    color: #003d80;  /* Un azul más oscuro al pasar el mouse */
+    cursor: pointer;  /* Cambia el cursor para dar interacción */
+}
+
+.site-footer {
+    background-color: #f4f4f4;  /* Color de fondo para diferenciar */
+    text-align: center;
+    padding-top: 10px;
+    margin-top: 40px;  /* Espacio entre el cajón y el footer */
+    font-size: 0.9em;
+    color: #777;
+    border-top: 1px solid #ddd;  /* Línea superior para separar visualmente */
+}
+
+.site-footer p {
+    margin: 5px 0;
+}
+
+/* Media Queries Responsivas */
+
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 2.5em;
+    }
+    #subtitle {
+        font-size: 1.2em;
+    }
+    .cta-section, .services-section, .details-section, .site-footer {
+        padding: 20px 10px;
+    }
+    .services-list {
+        flex-direction: column;
+        gap: 15px;
+    }
+    .service-item {
+        width: 100%;
+        max-width: 300px;
+        margin: 0 auto;
+    }
+    form, .cta-button {
+        width: 100%;
+        max-width: 100%;
+    }
+    .details-content {
+        padding: 15px;
+        margin-bottom: 20px;
+        width: 100%;
+        box-sizing: border-box;
+    }
+}
+
+@media (max-width: 600px) {
+    header h1 {
+        font-size: 2em;
+    }
+    #subtitle {
+        font-size: 1em;
+    }
+    .cta-section h2 {
+        font-size: 1.5em;
+    }
+    .cta-section p, .details-content p {
+        font-size: 1em;
+    }
+    .service-item h4 {
+        font-size: 1.3em;
+    }
+    .cta-button img {
+        width: 18px;
+        height: 18px;
+    }
+}
+
+@media (max-width: 480px) {
+    .language-switcher button {
+        padding: 8px 12px;
+        font-size: 0.8em;
+    }
+    form input, form textarea, form button {
+        font-size: 14px;
+        padding: 10px;
+    }
+    .details-content h2, .details-content h3 {
+        font-size: 1.5em;
+    }
+    .cta-button {
+        padding: 12px;
+    }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+    .details-section {
+        height: auto; /* Cambia de altura fija a automática en tablets */
+        padding-bottom: 40px; /* Añade espacio al final para que no se monte con el footer */
+    }
+}
+
+
+
+
